@@ -1,0 +1,283 @@
+/*Universal styles*/
+body {
+  font-family: 'PT mono', monospace;
+}
+
+h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+#grey {
+  color: #8D8D8D;
+}
+
+.sections {
+  color: black;
+  text-align: center;
+  padding-top: 5%;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgba(255,255,255,0.3);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+/*Add background to homepage*/
+/*body {
+  background-image: url(assets/homebanner.jpg);
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+*/
+/* Style the links inside the navigation bar */
+.topnav{
+  padding-left: 10%;
+}
+
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 0px;
+  padding-right: 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'PT Mono', monospace;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: blue;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: blue;
+}
+
+/*hero*/
+.hero {
+  width: 100%;
+}
+
+.producthero {
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+}
+
+#productherotext {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+/*area sections styling*/
+.container {
+  padding-top: 2%;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.information {
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 5%;
+}
+
+.reviews {
+  background-color: #FAFAFA;
+  padding-bottom: 5%;
+}
+
+.centered {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* code from https://alligator.io/css/cropping-images-object-fit/*/
+.category {
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  border-radius: 5%;
+  padding: 2%;
+}
+
+/*product page*/
+.product {
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  border-radius: 5%;
+  margin-right: 40px;
+}
+
+#productimg {
+  object-fit: cover;
+  width: 500px;
+  height: 600px;
+  border-radius: 1%;
+  margin-right: 40px;
+}
+
+/*row styling*/
+.row-prod {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+/*footer styling*/
+.footer {
+  background-color: #F5F2ED;
+  height: 250px;
+  padding-top: 40px;
+  padding-left: 10%;
+}
+
+/*various col styling*/
+.col {
+  float: left;
+}
+
+.col-f {
+  padding-right: 10rem;
+}
+
+.col-p {
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: inline-block;
+  justify-content: center;
+}
+
+.col-r {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: inline-block;
+  justify-content: flex-start;
+}
+
+
+/*https://www.w3schools.com/howto/howto_css_inline_form.asp*/
+
+/* Style the input fields */
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: none !important;
+  font-family: 'PT mono', monospace;
+}
+
+/* Style the email submit button */
+.form-inline button {
+  padding: 10px 20px;
+  background-color: #FFDF31;
+  border: none !important;
+  font-family: 'PT mono', monospace;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+#email {
+  margin-right: 0 !important;
+}
+
+/*Radio buttons styling*/
+.radio {
+  display: inline-block;
+}
+
+/* code pulled from https://stackoverflow.com/questions/4253920/how-do-i-change-the-color-of-radio-buttons*/
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.checked {
+  color: #818181;
+}
+
+.yellow {
+  color: #FFCC41;
+}
+
+/*button styling*/
+.button {
+  background-color: #FFCC41;
+  border: none;
+  padding: 15px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'PT mono', monospace;
+}
+
+.pillowbutton {
+  width: 50px;
+  height: 50px;
+  border: none;
+  padding: 16px;
+}
+
+select {
+  width: 80px;
+  height: 48px;
+  background-color: white;
+  border-color: #707070;
+}
