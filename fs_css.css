@@ -32,7 +32,7 @@ h3 {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255,255,255,.8);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -47,16 +47,6 @@ h3 {
   flex: 1;
 }
 
-/*Add background to homepage*/
-/*body {
-  background-image: url(assets/homebanner.jpg);
-  min-height: 380px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-*/
 /* Style the links inside the navigation bar */
 .topnav{
   padding-left: 10%;
@@ -75,12 +65,12 @@ h3 {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  color: blue;
+  color: #AAAAAA;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  color: blue;
+  color: #AAAAAA;
 }
 
 /*hero*/
@@ -278,7 +268,7 @@ input[type='radio']:checked:after {
     /*left: -1px;*/
     position: relative;
     /*background-color: #ffa500;*/
-    border: 2px solid #FFDF31;
+    border: 2px solid #7C7C7C;
     content: '';
     display: inline-block;
     visibility: visible;
