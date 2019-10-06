@@ -1,6 +1,7 @@
 /*Universal styles*/
 body {
   font-family: 'PT mono', monospace;
+  margin: 0;
 }
 
 h1 {
@@ -36,6 +37,14 @@ h3 {
   display: flex;
   align-items: center;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.topnav .navbar-filler {
+  flex: 1;
 }
 
 /*Add background to homepage*/
@@ -123,6 +132,14 @@ h3 {
   height: 250px;
   border-radius: 5%;
   padding: 2%;
+  opacity: 0.7;
+
+  transition: all 0.1s ease-in;
+}
+
+.category:hover {
+  opacity: 1;
+  transform: scale(1.05);
 }
 
 /*product page*/
@@ -150,7 +167,8 @@ h3 {
 
 .row {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+
 }
 
 /*footer styling*/
@@ -162,9 +180,9 @@ h3 {
 }
 
 /*various col styling*/
-.col {
+/*.col {
   float: left;
-}
+}*/
 
 .col-f {
   padding-right: 10rem;
@@ -221,31 +239,50 @@ h3 {
 
 /* code pulled from https://stackoverflow.com/questions/4253920/how-do-i-change-the-color-of-radio-buttons*/
 input[type='radio']:after {
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    top: -2px;
-    left: -1px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -3px;
+    left: -2px;
     position: relative;
-    background-color: #d1d3d1;
+    /*background-color: #d1d3d1;*/
     content: '';
     display: inline-block;
     visibility: visible;
+    box-sizing: border-box;
+    padding: 2px;
     border: 2px solid white;
 }
 
+#afterschool:after {
+  background-color: #D2AA47;
+}
+
+#morninghaze:after {
+  background-color: #812A17;
+}
+
+#cozydenim:after {
+  background-color: #69585E;
+}
+
+#rainyday:after {
+  background-color: #BAB4A6;
+}
+
 input[type='radio']:checked:after {
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    top: -2px;
-    left: -1px;
+    /*width: 15px;*/
+    /*height: 15px;*/
+    /*border-radius: 15px;*/
+    /*top: -2px;*/
+    /*left: -1px;*/
     position: relative;
-    background-color: #ffa500;
+    /*background-color: #ffa500;*/
+    border: 2px solid #FFDF31;
     content: '';
     display: inline-block;
     visibility: visible;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
 }
 
 .checked {
@@ -280,4 +317,23 @@ select {
   height: 48px;
   background-color: white;
   border-color: #707070;
+}
+
+
+.special-container {
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.special-container .sidebar {
+  width: 30%;
+}
+
+.special-container .actual-content {
+  flex: 1;
+}
+
+ul.check {
+  list-style-type: square;
 }
