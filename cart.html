@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Fluff Stuff</title>
+		<!-- css -->
+		<link rel="stylesheet" href="fs_css.css">
+		<!-- Google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
+		<!-- link to fontawesome-->
+  		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  		<!-- Add icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<!-- navigation bar -->
+		<div class="topnav">
+			<a href="index.html">Fluff Stuff</a>
+			<a href="fs_products.html">Pillows</a>
+			<a href="#">FAQ</a>
+			<a href="#">Contact</a>
+			<div class="navbar-filler"></div>
+			<i class="fas fa-shopping-cart stickright"></i>
+			<p id="cartnumber">(0)</p>
+		</div>
+		<div class="spacer-big"></div>
+		<div class="spacer-big"></div>
+		<div class="spacer-big"></div>
+		<div class="spacer-big"></div>
+
+		<div class="special-container">
+			<div class="rowcart">
+				<div class="col-75">
+						<div class="row">
+							<div class="col-50">
+								<h3 id="titles">Your Shopping Cart</h3>
+								<img id="pillow" src="assets/red pillow.jpeg">
+							</div>
+							<div class="col-50">
+								<div class="spacer-big"></div>
+								<h2>Hypoallergenic Pillow</h2>
+			        			<p>Color:<strong>Morning Haze</strong></p>
+			        			<p>Quantity:</p>
+					        	<select>
+								 	<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+								</select>
+								<br><br>
+								<i class="fas fa-trash"></i>
+							</div>
+						</div>
+				</div>
+				<div class="col-25">
+					<h3 id="titles">Order Summary</h3>
+						<p>Subtotal<span class="price">$15</span></p>
+						<p>Shipping<span class="price">Free</span></p>
+				      	<hr>
+				      	<p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+				      	<button class="button" type="button" onclick="addToCart(this);">Checkout</button>
+				      	<p>Add Promo Code<span class="price">+</span></p>
+				</div>
+
+			</div>
+		</div>
+	
+		<div class="spacer-big"></div>
+		<div class="spacer-big"></div>
+		<div class="spacer-big"></div>
+
+		<!-- footer -->
+		<div class="footer">
+			<div class="row">
+				<div class="col-f">
+					<h2>Fluff Stuff</h2>
+					<p>+1.412.539.3229</p>
+					<form class="form-inline" action="/action_page.php">
+						<input type="email" id="email" placeholder="Enter email" name="email">
+						<button type="submit">Learn more</button>
+					</form>
+				</div>
+				<div class="col-f">
+					<h2>Products</h2>
+					<p>Bed pillows<br>Couch pillows<br>Floor pillows<br>Round pillows</p>
+				</div>
+				<div class="col-f">
+					<h2>Support</h2>
+					<p>Contact us<br>FAQ<br>Returns<br>Shipping</p>
+				</div>
+				<div class="col-f">
+					<h2>About</h2>
+					<p>Our story<br>Locations</p>
+				</div>
+			</div>
+			
+		</div>
+
+
+
+	</body>
+<!-- scripts -->
+<script type="text/javascript" src="main.js"></script>
+</html>
+

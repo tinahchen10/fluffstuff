@@ -20,6 +20,7 @@
 			<a href="#">Contact</a>
 			<div class="navbar-filler"></div>
 			<i class="fas fa-shopping-cart stickright"></i>
+			<p id="cartnumber">(0)</p>
 		</div>
 		<!-- hero -->
 		<div>
@@ -28,6 +29,7 @@
 				<h1>Couch Pillows</h1>
 			</div>
 		</div>
+		<div class="spacer-big"></div>
 		<!-- shop by category -->
 		<div class="special-container">
 			<div class="sidebar">
@@ -52,11 +54,19 @@
 			<div class="row-prod">
 		        <div class="col">
 		        	<h2>Pillows / Couch Pillows / Hypoallergenic</h2>
-		          <img id="productimg" src="assets/hypoallergenic.jpeg">
-		          <button class="pillowbutton" style="background: url(assets/yellow_pillow.png)">
-		          <button class="pillowbutton" style="background: url(assets/red_pillow.png)">
-		          <button class="pillowbutton" style="background: url(assets/purple_pillow.png)">
-		          <button class="pillowbutton" style="background: url(assets/pink_pillow.png)">
+		          <img id="product-img" src="assets/hypoallergenic.jpeg">
+		          <button class="pillowbutton" value="0" onclick="displayColor(this);">
+		          	<img src="assets/yellow_pillow.png">
+		          </button>
+		          <button class="pillowbutton" value="1" onclick="displayColor(this);">
+		          	<img src="assets/red_pillow.png">
+		          </button>
+		          <button class="pillowbutton" value="2" onclick="displayColor(this);">
+		          	<img src="assets/purple_pillow.png">
+		          </button>
+		          <button class="pillowbutton" value="3" onclick="displayColor(this);">
+		          	<img src="assets/pink_pillow.png">
+		          </button>
 		        </div>
 		        <div class="col">
 		        	<h3>Hypoallergenic Pillow<br><br>$39</h3>
@@ -71,10 +81,10 @@
 		        	<p>Color:</p>
 		          	<!-- radio buttons -->
 		          	<div class="radio">
-					  <input type="radio" id="afterschool" name="color" value="afterschool">
-					  <input type="radio" id="morninghaze" name="color" value="morninghaze">
-					  <input type="radio" id="cozydenim" name="color" value="cozydenim">
-					  <input type="radio" id="rainyday" name="color" value="rainyday">
+					  <input type="radio" id="afterschool" name="color" value="0" onclick="displayColor(this);">
+					  <input name="color" type="radio" id="morninghaze" value="1" onclick="displayColor(this);">
+					  <input type="radio" id="cozydenim" name="color" value="2" onclick="displayColor(this);">
+					  <input type="radio" id="rainyday" name="color" value="3" onclick="displayColor(this);">
 		        	</div>
 		        	<p>Quantity:</p>
 		        	<select>
@@ -87,8 +97,7 @@
 						<option value="7">7</option>
 					</select>
 					<br><br>
-					<button class="button" type="button">Add to cart</button>
-
+					<button class="button" type="button" onclick="addToCart(this);">Add to cart</button>
 		        </div>  
 		    </div>
 		</div>
@@ -183,7 +192,7 @@
 
 
 	</body>
-		
-
+<!-- scripts -->
+<script type="text/javascript" src="main.js"></script>
 </html>
 

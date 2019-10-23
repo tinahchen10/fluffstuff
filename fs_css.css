@@ -18,6 +18,11 @@ h2 {
 h3 {
   font-size: 2em;
   font-weight: 400;
+  margin-top: 0 !important;
+}
+
+#titles {
+  font-size: 1.5em;
 }
 
 #grey {
@@ -141,12 +146,18 @@ h3 {
   margin-right: 40px;
 }
 
-#productimg {
+#product-img {
   object-fit: cover;
   width: 500px;
   height: 600px;
   border-radius: 1%;
   margin-right: 40px;
+}
+
+#pillow {
+  width: 80%;
+  height: auto;
+  padding-right: 2rem;
 }
 
 /*row styling*/
@@ -193,7 +204,21 @@ h3 {
   justify-content: flex-start;
 }
 
+.col-one-third {
+  width: 50%;
+}
 
+.col-last {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 30%;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.left {
+  text-align: right;
+}
 /*https://www.w3schools.com/howto/howto_css_inline_form.asp*/
 
 /* Style the input fields */
@@ -296,10 +321,20 @@ input[type='radio']:checked:after {
 }
 
 .pillowbutton {
-  width: 50px;
-  height: 50px;
+  border: 1px;
+  padding-right: 5px;
+  padding-top: 5px; 
+}
+
+.checkout {
+  background-color: #FFCC41;
   border: none;
-  padding: 16px;
+  padding: 15px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'PT mono', monospace;
 }
 
 select {
@@ -326,4 +361,48 @@ select {
 
 ul.check {
   list-style-type: square;
+}
+
+.spacer-big {
+  height: 40px;
+}
+
+.rowcart {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 60%; /* IE10 */
+  flex: 60%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.wrapper {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+span.price {
+  float: right;
+  color: grey;
 }
