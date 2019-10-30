@@ -22,7 +22,8 @@ h3 {
 }
 
 #titles {
-  font-size: 1.5em;
+  font-size: 1em;
+  font-weight: 700;
 }
 
 #grey {
@@ -154,7 +155,7 @@ h3 {
   margin-right: 40px;
 }
 
-#pillow {
+#pillow-img {
   width: 80%;
   height: auto;
   padding-right: 2rem;

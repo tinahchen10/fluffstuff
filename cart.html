@@ -11,7 +11,7 @@
   		<!-- Add icon library -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
-	<body>
+	<body onload="displayCart()">
 		<!-- navigation bar -->
 		<div class="topnav">
 			<a href="index.html">Fluff Stuff</a>
@@ -19,47 +19,44 @@
 			<a href="#">FAQ</a>
 			<a href="#">Contact</a>
 			<div class="navbar-filler"></div>
-			<i class="fas fa-shopping-cart stickright"></i>
+			<a href="cart.html"><i class="fas fa-shopping-cart stickright"></i></a>
 			<p id="cartnumber">(0)</p>
 		</div>
 		<div class="spacer-big"></div>
 		<div class="spacer-big"></div>
 		<div class="spacer-big"></div>
 		<div class="spacer-big"></div>
-
+		<div class="container">
+			<h3 id="titles">Your Shopping Cart</h3>
+		</div>
 		<div class="special-container">
 			<div class="rowcart">
-				<div class="col-75">
+				<div class="col-75" id="item">
+
 						<div class="row">
-							<div class="col-50">
-								<h3 id="titles">Your Shopping Cart</h3>
-								<img id="pillow" src="assets/red pillow.jpeg">
+							<div class="col-25">
+								<img id="pillow-img" src="assets/red pillow.jpeg">
 							</div>
-							<div class="col-50">
-								<div class="spacer-big"></div>
-								<h2>Hypoallergenic Pillow</h2>
-			        			<p>Color:<strong>Morning Haze</strong></p>
+							<div class="col-25">
+								<h2 id="name">Hypoallergenic Pillow</h2>
+			        			<p>Color:</p>
+			        			<p id="pillowcolor"><strong>Morning Haze</strong></p>
 			        			<p>Quantity:</p>
-					        	<select>
-								 	<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5</option>
-									<option value="6">6</option>
-									<option value="7">7</option>
-								</select>
+					        	<p id="quantity">1</p>
 								<br><br>
-								<i class="fas fa-trash"></i>
+								<button id="btn-trash"><i class="fas fa-trash"></i></button>
+							</div>
+							<div class="col-25">
+								<p id="price">$39</p>
 							</div>
 						</div>
 				</div>
 				<div class="col-25">
 					<h3 id="titles">Order Summary</h3>
-						<p>Subtotal<span class="price">$15</span></p>
+						<p>Subtotal<span class="price" id="subtotal">$39</span></p>
 						<p>Shipping<span class="price">Free</span></p>
 				      	<hr>
-				      	<p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+				      	<p>Total <span id="total" class="price" style="color:black">$39</span></p>
 				      	<button class="button" type="button" onclick="addToCart(this);">Checkout</button>
 				      	<p>Add Promo Code<span class="price">+</span></p>
 				</div>
